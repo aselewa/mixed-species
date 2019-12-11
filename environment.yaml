@@ -1,0 +1,48 @@
+# Conda configuration file to reproduce computing environment
+#
+# Create the conda environment:
+#
+# conda env create --file environment.yaml
+#
+# Update the conda environment:
+#
+# conda env update --file environment.yaml
+#
+# Activate the conda environment:
+#
+# source activate dropseq2
+#
+# Deactivate the conda environment:
+#
+# source deactivate dropseq2
+#
+# Resources:
+
+
+name:
+     mixedRunner
+channels:
+    - bioconda
+    - conda-forge
+    - default
+dependencies:
+    - pandoc
+    - fastqc
+    - snakemake
+    - umi_tools >= 0.5.1
+    - STAR >=2.7.3a-0
+    - samtools
+    - multiqc
+    - ucsc-gtftogenepred
+    - cutadapt
+    - pysam
+    - bcftools
+    - r-base
+    - r-rmarkdown
+    - r-ggplot2
+    - r-kableextra 
+
+    
+    
+    
+
